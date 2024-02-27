@@ -1,0 +1,1075 @@
+@charset "UTF-8";
+
+/* ESTILO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color:#032030;
+    height: 100vh;
+}
+    
+.interface {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+/* ESTILO CABEÇALHO */
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+header a {
+    color: #757575;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+/* linha animada */
+.btn-abrir-menu, .menu-mobile{
+    display: none;
+}
+
+header .menu-desktop a {
+    position: relative;
+    padding-bottom: 4px;
+    width: 120%;
+}
+
+header .menu-desktop a::after {
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: #006ac0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+header .menu-desktop a:hover::after {
+    width: 100%;
+}
+
+
+/* fechamento linha animada */
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li {
+    display: inline-block;
+    padding: 0 19px;
+}
+
+.menu-desktop {
+    padding-bottom: 16px;
+    padding-right: 20px;
+    font-size: 13px;
+}
+
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site {
+    padding: 30px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: aliceblue;
+    font-size: 35px;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: aliceblue;
+    text-align: justify;
+    font-size: 14px;
+}
+.topo-do-site .txt-topo-site p span.html {
+    color: rgb(255, 87, 21);
+}
+.topo-do-site .txt-topo-site p span.css {
+    color: rgb(14, 118, 255);
+}
+.topo-do-site .txt-topo-site p span.js {
+    color: rgb(231, 255, 14);
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    border-radius: 20px;
+}
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* ESTILOS DA TECNOLOGIA */
+
+section.tecnologias {
+    margin: 40px 4%;
+}
+
+section.tecnologias .flex {
+    gap: 60px;
+}
+
+section.tecnologias .tec-cor-azul {
+    color: #0087ca;
+}
+
+section.tecnologias .interface h2 {
+    color: aliceblue;
+    text-align: center;
+}
+
+section.tecnologias {
+    margin-top: 11%;
+}
+
+.tecnologias .tecnologias-box {
+    color: aliceblue;
+    padding: 35px;  
+    text-align: center;
+    margin-top: 65px;
+    border-radius: 20px;
+    transition: .2s;
+    width: 600px;
+}
+
+.tecnologias .tecnologias-box h3 {
+    margin: 15px 0;
+}
+
+.tecnologias .tecnologias-box p {
+    text-align: justify;
+    font-size: 14px;
+}
+
+.tecnologias .tecnologias-box:hover {
+    color: rgb(255, 255, 255);
+    transform: scale(1.05);
+    box-shadow: 0  0 20px #0093dd;
+}
+
+/* .slide-site .interface .flex .d-block {
+    border-radius: 20px;
+    width: 70%;
+    height: auto;
+} */
+
+/* CARROSSEL */
+/* section {
+   padding: 80px 0;
+}
+
+section.slide-site {
+    box-shadow: 0  0 30px #0093dd;
+    padding-top: 100px 0;
+}
+
+section.slide-site .interface {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #032030;
+}
+
+.slide-site .interface .flex {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: animate 50s linear infinite;
+}
+@keyframes animate {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100% {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.slide-site .interface .flex span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 40deg)) translateZ(400px);
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent,rgba(0, 0, 0, 0.267))
+}
+
+.slide-site .interface .flex span :hover {
+    transform: scale(1.07);
+    box-shadow: 0  0 20px #0093dd;
+}
+
+.slide-site .interface .flex span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+} */
+
+/* ESTILO DO CONTEÚDO DO SITE */
+section.conteudo-site {
+    padding: 40px 4%;
+    margin-bottom: 8%;
+    margin-top: 8%;
+}
+
+section.conteudo-site .interface #flex-bootstrap {
+    padding-left: 15px;
+}
+
+section.conteudo-site .interface #flex-reactnative {
+    padding-left: 15px;
+}
+
+section.conteudo-site .interface #flex-php {
+    padding-left: 15px;
+}
+
+section.conteudo-site .txt-conteudo .conteudo-box ul li p {
+    color: #e6e6e6;
+    font-size: 17px;
+}
+
+section.conteudo-site .txt-conteudo .conteudo-box h2 {
+    color: #c7c7c7;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+section.conteudo-site .txt-conteudo p {
+    color: #fff;
+    font-size: 16px;
+    text-align: justify;
+    
+}
+
+section.conteudo-site .txt-conteudo .ultimo-paragrafo {
+    padding: 25px 0;
+}
+
+section.conteudo-site .txt-conteudo .p-txt-conteudo {
+    margin: 100px 0;
+}
+
+section.conteudo-site .interface #tecnologia-html {
+    color: #f06000;
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+section.conteudo-site .interface #tecnologia-html span {
+    color: #ecebeb;
+}
+
+section.conteudo-site .interface #tecnologia-css {
+    color: #2194ff;
+    font-size: 50px;
+}
+section.conteudo-site .interface #tecnologia-css span {
+    color: #f1f1f1;
+}
+
+section.conteudo-site .interface #tecnologia-js {
+    color: #ffe70d;
+    font-size: 50px;
+}
+
+section.conteudo-site .interface #tecnologia-bootstrap {
+    color: #7a15ff;
+    font-size: 50px;
+}
+
+section.conteudo-site .interface #tecnologia-wordpress {
+    color: #1a70d3;
+    font-size: 50px;
+}
+section.conteudo-site .interface #tecnologia-wordpress span {
+    color: #fff;
+}
+
+section.conteudo-site .interface #tecnologia-react-native {
+    color: #00eeff;
+    font-size: 50px;
+}
+
+section.conteudo-site .interface #tecnologia-python {
+    color: #e4c200;
+    font-size: 50px;
+}
+section.conteudo-site .interface #tecnologia-python span {
+    color: #006ac0;
+}
+
+section.conteudo-site .interface #tecnologia-php {
+    color: #8630cc;
+    font-size: 50px;
+}
+
+section.conteudo-site .interface #tecnologia-mysql {
+    color: #ff8e0c;
+    font-size: 50px;
+}
+section.conteudo-site .interface #tecnologia-mysql span {
+    color: #006ac0;
+}
+
+section.conteudo-site .interface {
+    display: flex;  
+    align-items: center;
+    gap: 33%;
+    /* border-radius: 20px; */
+}
+
+section.conteudo-site .txt-conteudo .conteudo-box {
+    border: 2px solid #004c79;
+    border-radius: 20px;
+    margin-top: 55px;
+    padding: 0 20px;
+    width: 100%;
+    height: auto;
+}
+
+section.conteudo-site .txt-conteudo .conteudo-box span {
+    color: #027ab6;
+}
+
+section.conteudo-site .txt-conteudo .conteudo-box ul {
+    padding: 20px 0;
+    list-style-type: none;
+}
+
+/* inteface html */
+section.conteudo-site #borda-animada-html {
+    border: 2px solid #ff7b00f8;
+    border-radius: 20px;
+    padding-right: 10%;
+}
+
+section.conteudo-site #borda-animada-html:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 20px rgb(255, 115, 0);
+    transition-duration: 0.5s;
+}
+
+/* interface css */
+section.conteudo-site #borda-animada-css {
+    border: 2px solid #002ffff8;
+    border-radius: 20px;
+    padding-right: 8%;
+}
+
+section.conteudo-site #borda-animada-css:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 20px rgb(0, 38, 255);
+    transition-duration: 0.5s;
+}
+
+/* interface javascript */
+section.conteudo-site #borda-animada-js {
+    border: 2px solid #ffe600f8;
+    border-radius: 20px;
+    padding-right: 30%;
+}
+
+section.conteudo-site #borda-animada-js:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 20px rgb(238, 255, 0);
+    transition-duration: 0.5s;
+}
+
+/* interface bootstrap */
+section.conteudo-site #borda-animada-bootstrap {
+    border: 2px solid #8c00fff8;
+    border-radius: 20px;
+    padding-right: 27%;
+}
+
+section.conteudo-site #borda-animada-bootstrap:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 20px #8317ff;
+    transition-duration: 0.5s;
+}
+
+/* interface wordpress */
+section.conteudo-site #borda-animada-wordpress {
+    border: 2px solid #1d7ecef8;
+    border-radius: 20px;
+    padding-right: 27%;
+}
+
+section.conteudo-site #borda-animada-wordpress:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 20px #F0F3FA;
+    transition-duration: 0.5s;
+}
+
+/* interface react native */
+section.conteudo-site #borda-animada-reactnative {
+    border: 2px solid #21e5fff8;
+    border-radius: 20px;
+    padding-right: 27%;
+}
+
+section.conteudo-site #borda-animada-reactnative:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 20px #00eeff;
+    transition-duration: 0.5s;
+}
+
+/* interface python */
+section.conteudo-site #borda-animada-python {
+    border: 2px solid #218ae0f8;
+    border-radius: 20px;
+    padding-right: 10%;
+}
+
+section.conteudo-site #borda-animada-python:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 20px #fbff00;
+    transition-duration: 0.5s;
+}
+
+/* interface php */
+section.conteudo-site #borda-animada-php {
+    border: 2px solid #8400fff8;
+    border-radius: 20px;
+}
+
+section.conteudo-site #borda-animada-php:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 20px #a927ff;
+    transition-duration: 0.5s;
+}
+
+/* interface mysql */
+section.conteudo-site #borda-animada-mysql {
+    border: 2px solid #218ae0f8;
+    border-radius: 20px;
+}
+
+section.conteudo-site #borda-animada-mysql:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 20px #ff8800;
+    transition-duration: 0.5s;
+}
+
+/* estilo do rodapé */
+
+footer {
+    padding: 0 4% 60px 4%;
+    box-shadow: 0 0 30px #0080c0;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+.borda {
+    border-top: 3px solid #006ac0;
+}
+
+.btn-footer button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: #0087ca;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 14px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.icon {
+    margin-top: 19%;
+}
+
+footer .line-footer p {
+    color: #0087ca;
+}
+
+footer .line-footer p i {
+    color: #0087ca;
+    font-size: 20px;
+}
+
+footer .line-footer p a {
+    color: #0087ca;
+}
+
+/* APLICANDO MÍDIA-QUERY */
+/* para dispositivo celular celular */
+@media screen and (max-width: 767px) {
+
+/* classes gerais */
+    .flex {
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    /* estilo menu mobile */
+    .btn-abrir-menu, .menu-mobile{
+        display: block;
+    } 
+
+    .btn-abrir-menu i {
+        color: #0093dd;
+        font-size: 40px;
+    }
+
+    .btn-abrir-menu {
+        padding-right: 15px;
+    }
+
+    .menu-mobile {
+        background: #032030;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 99999;
+        width: 0%;
+        overflow: hidden;
+        transition: .4s;
+    }
+
+    .menu-mobile.abrir-menu {
+        width: 68%;
+    }
+
+    .menu-mobile.abrir-menu ~ .overlay-menu {
+        display: block;
+    }
+
+    .menu-mobile .btn-fechar {
+        padding: 20px 5%;
+    }
+
+    .menu-mobile .btn-fechar i {
+        color: #0093dd;
+        font-size: 30px;
+    }
+
+    .menu-mobile nav ul {
+        text-align: right; 
+        padding-left: 0;
+    }
+
+    .menu-mobile nav ul li {
+        padding: 0 0;
+    }
+
+    .menu-mobile nav ul li a {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 300;
+        padding: 10px 10%;
+        display: block;
+    }
+
+    .menu-mobile nav ul li a:hover{
+        background-color: #0093dd;
+        color: #001825;
+    }
+
+    .overlay-menu {
+        background-color: #032030b0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 88888;
+        display: none;
+    }
+
+/* cabeçalho */
+    .menu-desktop {
+        display: none;
+    }
+    
+/* topo do site */
+
+    .topo-do-site .txt-topo-site p {
+        font-size: 16px;
+        letter-spacing: -1px;
+    }
+
+    section.topo-do-site {
+        padding: 40px 5%;
+    }
+
+    .topo-do-site .txt-topo-site h1 {
+        font-size: 24px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    
+    .topo-do-site .flex .img-topo-site img {
+        width: 100%;
+    }
+
+    .topo-do-site .img-topo-site{
+        width: 95%;
+    }
+
+/* estilos da tecnologia */
+
+    section.tecnologias {
+        margin: 40px 8%;
+    }
+
+    section.tecnologias .flex {
+        gap: 10px;
+    }
+
+    section.tecnologias {
+        margin-top: 4%;
+    }
+
+    .tecnologias .interface h2 {
+        line-height: 30px;
+        font-size: 25px;
+    }
+
+    .tecnologias .tecnologias-box h3 {
+        margin: 15px 0;
+        font-size: 22px;    
+    }
+    
+    .tecnologias .tecnologias-box p {
+        text-align: justify;
+        font-size: 16px;
+        letter-spacing: -1px;
+    }
+
+    .tecnologias .tecnologias-box {
+        width: 100%;
+    }
+
+    .tecnologias .tecnologias-box:hover {
+        transform: scale(1.03);
+        box-shadow: 0  0 15px #0093dd;
+    }
+
+/* carrossel */
+
+.slide-site .interface .flex {
+    padding: 0;
+}
+    
+/* conteúdo do site */
+
+    section.conteudo-site {
+        padding: 40px 8%;
+    }
+
+    section.conteudo-site .face-html{
+        gap: 40px;
+    }
+    section.conteudo-site .face-css{
+        gap: 42px;
+    }
+    section.conteudo-site .face-js{
+        gap: 30px;
+    }
+    section.conteudo-site .face-bootstrap{
+        gap: 30px;
+    }
+    section.conteudo-site .face-wordpress{
+        gap: 30px;
+    }
+    section.conteudo-site .face-react{
+        gap: 30px;
+    }
+    section.conteudo-site .face-python{
+        gap: 33px;
+    }
+    section.conteudo-site .face-php{
+        gap: 48px;
+    }
+    section.conteudo-site .face-mysql{
+        gap: 40px;
+    }
+
+    section.conteudo-site .interface #flex-bootstrap {
+        padding-left: 8px;
+    }
+    
+    section.conteudo-site .interface #flex-reactnative {
+        padding-left: 8px;
+    }
+    
+    section.conteudo-site .interface #flex-php {
+        padding-left: 8px;
+    }
+
+    section.conteudo-site .interface .flex .img-conteudo img {
+        width: 90px;
+        height: auto;
+    }
+
+    section.conteudo-site .interface #tecnologia-html {
+        font-size: 25px;
+    }
+    section.conteudo-site .interface #tecnologia-css {
+        font-size: 25px;
+    }
+    section.conteudo-site .interface #tecnologia-js {
+        font-size: 25px;
+    }
+    section.conteudo-site .interface #tecnologia-bootstrap {
+        font-size: 25px;
+    }
+    section.conteudo-site .interface #tecnologia-wordpress {
+        font-size: 25px;
+    }
+    section.conteudo-site .interface #tecnologia-react-native {
+        font-size: 25px;
+    }
+    section.conteudo-site .interface #tecnologia-python {
+        font-size: 25px;
+    }
+    section.conteudo-site .interface #tecnologia-php {
+        font-size: 25px;
+    }
+    section.conteudo-site .interface #tecnologia-mysql {
+        font-size: 25px;
+    }
+
+    section.conteudo-site .txt-conteudo {
+        letter-spacing:1px;
+    }
+
+/* estilos rodapé */
+
+    .icon {
+        margin-top: 0%;
+    }
+
+    .logo-footer, .btn-footer, .line-footer {
+        text-align: center;
+    }
+
+    .btn-footer button {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .btn-footer #youtube-button {
+        margin: 0 8px 0 8px;
+    }
+
+}
+
+/* APLICANDO MÍDIA-QUERY */
+/* para dispositivo tablet */
+@media screen and (min-width: 767px) and (max-width: 1023px){
+
+    /* classes gerais */
+    .flex {
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    /* estilo menu mobile */
+    .btn-abrir-menu, .menu-mobile{
+        display: block;
+    } 
+
+    .btn-abrir-menu i {
+        color: #0093dd;
+        font-size: 40px;
+    }
+
+    .btn-abrir-menu {
+        padding-right: 15px;
+    }
+
+    .menu-mobile {
+        background: #032030;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 99999;
+        width: 0%;
+        overflow: hidden;
+        transition: .4s;
+    }
+
+    .menu-mobile.abrir-menu {
+        width: 68%;
+    }
+
+    .menu-mobile.abrir-menu ~ .overlay-menu {
+        display: block;
+    }
+
+    .menu-mobile .btn-fechar {
+        padding: 20px 5%;
+    }
+
+    .menu-mobile .btn-fechar i {
+        color: #0093dd;
+        font-size: 30px;
+    }
+
+    .menu-mobile nav ul {
+        text-align: right; 
+        padding-left: 0;
+    }
+
+    .menu-mobile nav ul li {
+        padding: 0 0;
+    }
+
+    .menu-mobile nav ul li a {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 300;
+        padding: 10px 10%;
+        display: block;
+    }
+
+    .menu-mobile nav ul li a:hover{
+        background-color: #0093dd;
+        color: #001825;
+    }
+
+    .overlay-menu {
+        background-color: #032030b0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 88888;
+        display: none;
+    }
+
+/* cabeçalho */
+    .menu-desktop {
+        display: none;
+    }
+    
+/* topo do site */
+
+    .topo-do-site .txt-topo-site p {
+        font-size: 16px;
+        letter-spacing: -1px;
+    }
+
+    section.topo-do-site {
+        padding: 40px 5%;
+    }
+
+    .topo-do-site .txt-topo-site h1 {
+        font-size: 24px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    
+    .topo-do-site .flex .img-topo-site img {
+        width: 100%;
+    }
+
+    .topo-do-site .img-topo-site{
+        width: 95%;
+    }
+
+/* estilos da tecnologia */
+
+    section.tecnologias {
+        margin: 40px 8%;
+    }
+
+    section.tecnologias .flex {
+        gap: 10px;
+    }
+
+    section.tecnologias {
+        margin-top: 4%;
+    }
+
+    .tecnologias .interface h2 {
+        line-height: 30px;
+        font-size: 25px;
+    }
+
+    .tecnologias .tecnologias-box h3 {
+        margin: 15px 0;
+        font-size: 22px;    
+    }
+    
+    .tecnologias .tecnologias-box p {
+        text-align: justify;
+        font-size: 16px;
+        letter-spacing: -1px;
+    }
+
+    .tecnologias .tecnologias-box {
+        width: 100%;
+    }
+
+    .tecnologias .tecnologias-box:hover {
+        transform: scale(1.03);
+        box-shadow: 0  0 15px #0093dd;
+    }
+
+/* carrossel */
+
+.slide-site .interface .flex {
+    padding: 0;
+}
+    
+/* conteúdo do site */
+
+    section.conteudo-site {
+        padding: 40px 8%;
+    }
+
+    section.conteudo-site .face-html{
+        gap: 40px;
+    }
+    section.conteudo-site .face-css{
+        gap: 42px;
+    }
+    section.conteudo-site .face-js{
+        gap: 30px;
+    }
+    section.conteudo-site .face-bootstrap{
+        gap: 30px;
+    }
+    section.conteudo-site .face-wordpress{
+        gap: 30px;
+    }
+    section.conteudo-site .face-react{
+        gap: 30px;
+    }
+    section.conteudo-site .face-python{
+        gap: 33px;
+    }
+    section.conteudo-site .face-php{
+        gap: 48px;
+    }
+    section.conteudo-site .face-mysql{
+        gap: 40px;
+    }
+
+    section.conteudo-site .interface #flex-bootstrap {
+        padding-left: 8px;
+    }
+    
+    section.conteudo-site .interface #flex-reactnative {
+        padding-left: 8px;
+    }
+    
+    section.conteudo-site .interface #flex-php {
+        padding-left: 8px;
+    }
+
+    section.conteudo-site .interface .flex .img-conteudo img {
+        width: 90px;
+        height: auto;
+    }
+
+    section.conteudo-site .interface #tecnologia-html {
+        font-size: 25px;
+    }
+    section.conteudo-site .interface #tecnologia-css {
+        font-size: 25px;
+    }
+    section.conteudo-site .interface #tecnologia-js {
+        font-size: 25px;
+    }
+    section.conteudo-site .interface #tecnologia-bootstrap {
+        font-size: 25px;
+    }
+    section.conteudo-site .interface #tecnologia-wordpress {
+        font-size: 25px;
+    }
+    section.conteudo-site .interface #tecnologia-react-native {
+        font-size: 25px;
+    }
+    section.conteudo-site .interface #tecnologia-python {
+        font-size: 25px;
+    }
+    section.conteudo-site .interface #tecnologia-php {
+        font-size: 25px;
+    }
+    section.conteudo-site .interface #tecnologia-mysql {
+        font-size: 25px;
+    }
+
+    section.conteudo-site .txt-conteudo {
+        letter-spacing:1px;
+    }
+
+/* estilos rodapé */
+
+    .icon {
+        margin-top: 0%;
+    }
+
+    .logo-footer, .btn-footer, .line-footer {
+        text-align: center;
+    }
+
+    .btn-footer button {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .btn-footer #youtube-button {
+        margin: 0 8px 0 8px;
+    }
+
+}

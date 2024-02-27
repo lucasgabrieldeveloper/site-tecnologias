@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--fim google fonts-->
+    <!-- links bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- fim links bootstrap -->
+    <link rel="stylesheet" href="style.css">
+
+    <script src="menu.js" defer></script>
+
+    <title>Tecnologias Web</title>
+</head>
+<body>
+<!--CABEÇALHO-->
+<header>
+    <!--INTERFACE-->
+    <div class="interface">
+        <!--LOGO-TIPO-->
+        <div class="logo-tipo">
+            <a href="#"><img src="../Img/logo.png" alt="logo do site" width="150px"></a>
+        </div>
+        <!--FECHAMENTO_LOGO-TIPO-->
+        <!--NAVEGAÇÃO-->
+        <nav class="menu-desktop">
+            <ul>
+                <li><a href="#tecnology">Início</a></li>
+                <li><a href="#html">Html5</a></li>
+                <li><a href="#css">Css3</a></li>
+                <li><a href="#js">JavaScript</a></li>
+                <li><a href="#bootstrap">Bootstrap</a></li>
+                <li><a href="#wordpress">Wordpress</a></li>
+                <li><a href="#reactnative">React Native</a></li>
+                <li><a href="#python">Python</a></li>
+                <li><a href="#php">Php</a></li>
+                <li><a href="#mysql">Mysql</a></li>
+                <li><a href="#footer">Sobre</a></li>
+            </ul>
+        </nav>
+        <!--FECHAMENTO_NAVEGAÇÃO-->
+        <div class="btn-abrir-menu" id="btn-menu">
+            <i class="bi bi-list"></i>
+        </div>
+        <!-- MENU-MOBILE -->
+        <div class="menu-mobile" id="menu-mobile">
+            <div class="btn-fechar">
+                <i class="bi bi-x-lg"></i>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#tecnology">Início</a></li>
+                    <li><a href="#html">Html5</a></li>
+                    <li><a href="#css">Css3</a></li>
+                    <li><a href="#js">JavaScript</a></li>
+                    <li><a href="#bootstrap">Bootstrap</a></li>
+                    <li><a href="#wordpress">Wordpress</a></li>
+                    <li><a href="#reactnative">React Native</a></li>
+                    <li><a href="#python">Python</a></li>
+                    <li><a href="#php">Php</a></li>
+                    <li><a href="#mysql">Mysql</a></li>
+                    <li><a href="#footer">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- FECHAMENTO MENU-MOBILE -->
+        <div class="overlay-menu" id="overlay-menu">
+
+        </div>
+    </div>
+    <!--FECHAMENTO_INTERFACE-->
+</header>
+<!--FECHAMENTO_CABEÇALHO-->
+
+<!--CORPO DO SITE-->
+<main>
+    <!--TOPO DO SITE-->
+    <section class="topo-do-site">
+        <!--INTERFACE-->
+        <div class="interface"> <!-- DIVs PADRÃO-->
+            <!--FLEX-->
+            <div class="flex"> <!-- DIVs PADRÃO-->
+                <div class="txt-topo-site">
+                    <h1>PROGRAMAÇÃO WEB MOBILE</h1>
+                    <p>A programação web mobile integra tecnologias fundamentais como <span class="html">HTML</span>, <span class="css">CSS</span> e <span class="js">JavaScript</span> para criar aplicativos e sites otimizados para dispositivos móveis. O HTML (Hypertext Markup Language) é usado para estruturar o conteúdo, fornecendo a base para a página. Já o CSS (Cascading Style Sheets) é responsável pelo design e pela estilização, permitindo a criação de interfaces responsivas que se adaptam a diferentes tamanhos de tela e garantem uma experiência visual agradável. Por fim, o JavaScript oferece interatividade e funcionalidade dinâmica aos aplicativos, possibilitando a criação de elementos interativos e o processamento de ações do usuário, tornando a experiência móvel mais fluida e engajadora.</p>
+                </div>
+                <div class="img-topo-site">
+                    <img src="../Img/nova-img-topo-site.jpg" alt="imagem do topo">
+                </div>
+            </div>
+            <!--FECHAMENTO-FLEX-->
+        </div>
+        <!--FECHAMENTO-INTERFACE-->
+    </section>
+    <!--FECHAMENTO-TOPO DO SITE-->
+
+    <!--TECNOLOGIAS-->
+    <section class="tecnologias" id="tecnology">
+        <!--INTERFACE-->
+        <div class="interface"> <!-- DIVs PADRÃO-->
+            <h2>TECNOLOGIAS DA <span class="tec-cor-azul">PROGRAMAÇÃO</span></h2>
+            <!--FLEX-->
+            <div class="flex"> <!-- DIVs PADRÃO-->
+                <div class="tecnologias-box">
+                    <img src="../Icones/front_end/android-chrome-192x192.png" alt="icon front-end" width="100px">
+                    <h3>Front End</h3>
+                    <p class="justify">Front-end development se concentra na criação da interface com a qual os usuários interagem diretamente em um site ou aplicativo. Isso envolve a implementação de elementos visuais, como layouts, botões, menus e outros componentes de design, além de garantir uma experiência de usuário intuitiva e responsiva em diferentes dispositivos, como computadores, tablets e smartphones.</p>
+                </div>
+                <div class="tecnologias-box">
+                    <img src="../Icones/back_end/android-chrome-192x192.png" alt="icon front-end" width="100px">
+                    <h3>Back End</h3>
+                    <p class="justify">Back-end development refere-se à criação e manutenção da infraestrutura e lógica de um aplicativo ou site que ocorre no lado do servidor. Envolve a programação de funcionalidades que não são visíveis diretamente aos usuários, como a interação com bancos de dados, o processamento de dados, a lógica de negócios e a segurança do sistema.</p>
+                </div>
+                <div class="tecnologias-box">
+                    <img src="../Icones/database/android-chrome-192x192.png" alt="icon front-end" width="100px">
+                    <h3>Database</h3>
+                    <p class="justify">Sistema organizado para armazenar, gerenciar e recuperar informações de maneira eficiente. Ele é composto por conjuntos estruturados de dados, geralmente organizados em tabelas, que podem ser facilmente consultados, atualizados e gerenciados. Os bancos de dados são usados em muitos aplicativos e sistemas para armazenar informações, desde simples listas de contatos até dados complexos em larga escala para empresas.</p>
+                </div>
+            </div>
+            <!--FECHAMENTO-FLEX-->
+        </div>
+        <!--FECHAMENTO-INTERFACE-->
+    </section>
+    <!--FECHAMENTO-TECNOLOGIAS-->
+
+    <!-- CARROSSEL -->
+    <section class="slide-site">
+        <!-- INTERFACE -->
+        <div class="interface">
+            <!-- FLEX -->
+            <div class="flex">
+                
+            <!-- FECHAMENTO FLEX -->
+            </div>
+        <!-- FECHAMENTO INTERFACE -->
+        </div>
+    <!-- FECHAMENTO CARROSSEL -->
+    </section>
+    <!--CONTEÚDO DO SITE-->
+    <section class="conteudo-site" id="html">
+        <!--INTERFACE-->
+        <div class="interface face-html" id="borda-animada-html"> <!-- DIVs PADRÃO--> 
+            <!--FLEX-->
+            <div class="flex"> <!-- DIVs PADRÃO-->
+                <!-- IMG-CONTEUDO-->
+                <div class="img-conteudo">
+                    <img src="../Img/html/html_recort.png" alt="logo html" width="150px">
+                </div>
+                <!-- FECHAMENTO IMG-CONTEUDO-->
+            </div>
+            <!-- FECHAMENTO FLEX -->
+            <!-- TÍTULO -->
+            <h1 id="tecnologia-html">HTML<span>5</span></h1>
+            <!-- FECHAMENTO TÍTULO -->
+        </div>
+        <!--FECHAMENTO INTERFACE-->
+            <!-- TXT CONTEUDO -->
+            <div   class="txt-conteudo">
+                <p class="p-txt-conteudo">
+                    HTML (HyperText Markup Language) é a linguagem de marcação usada para criar a estrutura básica e o conteúdo de páginas da web. Ele consiste em uma série de elementos (ou tags) que definem a estrutura e o significado do conteúdo de uma página.
+                </p>
+                <div class="conteudo-box">
+                    <h2>Estrutura Básica</h2>
+                        <ul>
+                            <li>
+                                <p>
+                                    <code><strong><span>&lt;!DOCTYPE html&gt;: </span></strong></code>
+                                    Declaração que define o tipo de documento como HTML5.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <code><strong><span>&lt;html&gt;: </span></strong></code>
+                                    Elemento raiz que engloba todo o conteúdo da página.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <code><strong><span>&lt;head&gt;: </span></strong></code>
+                                    Contém informações sobre o documento, como meta informações, título, links para CSS, scripts, etc.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <code><strong><span>&lt;meta charset="UTF-8"&gt;: </span></strong></code>
+                                    Define a codificação de caracteres para UTF-8 (Unicode).
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <code><strong><span>&lt;title&gt;: </span></strong></code>
+                                    Define o título da página exibido na barra de título do navegador.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <code><strong><span>&lt;body&gt;: </span></strong></code>
+                                    Contém todo o conteúdo visível da página.
+                                </p>
+                            </li>
+                        </ul>
+                </div>
+                <div class="conteudo-box">
+                    <h2>Tags de Conteúdo</h2>
+                        <ul>
+                            <li>
+                                <p>
+                                    <span>
+                                        <code><strong><span>&lt;h1&gt;</span></strong></code>,
+                                        <code><strong><span>&lt;h2&gt;</span></strong></code>,
+                                        <code><strong><span>&lt;h3&gt;</span></strong></code>,
+                                        <code><strong><span>&lt;h4&gt;</span></strong></code>,
+                                        <code><strong><span>&lt;h5&gt;</span></strong></code>,
+                                        <code><strong><span>&lt;h6&gt;:</span></strong></code>
+                                    </span>
+                                    Definem títulos de diferentes níveis, do mais importante (h1) ao menos importante (h6).
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <code><strong><span>&lt;p&gt;: </span></strong></code>
+                                    Define um parágrafo de texto.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <code><strong><span>&lt;a&gt;: </span></strong></code>
+                                    Cria um link para outras páginas ou recursos.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <code><strong><span>&lt;img&gt;: </span></strong></code>
+                                    Insere uma imagem na página.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <code><strong><span>&lt;ul&gt;</span></strong></code> e
+                                    <code><strong><span>&lt;ol&gt;: </span></strong></code>
+                                    Criam listas não ordenadas e ordenadas, respectivamente.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <code><strong><span>&lt;li&gt;: </span></strong></code>
+                                    Define um item de lista dentro de <code><strong><span>&lt;ul&gt;</span></strong></code> ou <code><strong><span>&lt;ol&gt;</span></strong></code>.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <code><strong><span>&lt;div&gt;</span></strong></code> e <code><strong><span>&lt;span&gt;: </span></strong></code>
+                                    São elementos de divisão utilizados para agrupar e estilizar blocos ou partes de texto.
+                                </p>
+                            </li>
+                        </ul>
+                </div>
+                <div class="conteudo-box">
+                    <h2>Elementos Estruturais</h2>
+                        <ul>
+                            <li>
+                                <p>
+                                    <code><strong><span>&lt;header&gt;</span></strong></code>,
+                                    <code><strong><span>&lt;main&gt;</span></strong></code>,
+                                    <code><strong><span>&lt;section&gt;</span></strong></code>,
+                                    <code><strong><span>&lt;article&gt;</span></strong></code>,
+                                    <code><strong><span>&lt;footer&gt;:</span></strong></code>
+                                    Esses elementos ajudam a organizar e estruturar o conteúdo da página, tornando-a semanticamente significativa para os mecanismos de busca e acessibilidade.
+                                        
+                                </p>
+                            </li>
+                        </ul>
+                </div>
+                <div class="conteudo-box">
+                    <h2>Atributos</h2>
+                        <ul>
+                            <li>
+                                <p>
+                                    <code><strong><span>&lt;class&gt;</span></strong></code>,
+                                    <code><strong><span>&lt;id&gt;:</span></strong></code>
+                                    São atributos usados para identificar elementos e aplicar estilos CSS ou interações JavaScript.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <code><strong><span>&lt;href&gt;</span></strong></code>,
+                                    <code><strong><span>&lt;src&gt;</span></strong></code>,
+                                    <code><strong><span>&lt;alt&gt;:</span></strong></code>
+                                    São exemplos de atributos comuns usados em elementos como <strong><span>&lt;a&gt;</span></strong> (para links), <strong><span>&lt;img&gt;</span></strong> (para imagens) e definem o destino, a fonte e o texto alternativo, respectivamente.
+                                </p>
+                            </li>
+                        </ul>
+                </div>
+                <div class="conteudo-box">
+                    <h2>Comentários</h2>
+                        <ul>
+                            <li>
+                                <p>
+                                    <code><strong><span>&lt;-- <em>Comentário</em> --&gt;</span></strong></code>
+                                    : Permitem adicionar notas no código HTML que não são exibidas na página, úteis para documentação ou para desativar temporariamente partes do código.
+                                </p>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+            <!-- FECHAMENTO TXT CONTEUDO -->
+    </section>
+    <!--FECHAMENTO CONTEÚDO DO SITE-->
+    <!--CONTEÚDO DO SITE-->
+    <section class="conteudo-site" id="css">
+        <div class="interface face-css" id="borda-animada-css"> <!-- DIVs PADRÃO--> 
+            <!--FLEX-->
+            <div class="flex"> <!-- DIVs PADRÃO-->
+                <!-- IMG-CONTEUDO-->
+                <div class="img-conteudo">
+                    <img src="../Img/css/css_remove.png" alt="logo html" width="150px">
+                </div>
+                <!-- FECHAMENTO IMG-CONTEUDO-->
+            </div>
+            <!-- FECHAMENTO FLEX -->
+            <!-- TÍTULO -->
+            <h1 id="tecnologia-css">CSS<span>3</span></h1>
+            <!-- FECHAMENTO TÍTULO -->
+        </div>
+            <!-- TXT CONTEUDO -->
+            <div class="txt-conteudo">
+                <p class="p-txt-conteudo">
+                    CSS (Cascading Style Sheets) é uma linguagem de estilo usada para definir a apresentação e o design de páginas da web escritas em HTML e XHTML. Ele permite controlar a aparência visual e o layout do conteúdo HTML em um navegador web.
+                </p>
+                <div class="conteudo-box">
+                    <h2>Funcionamento Básico</h2>
+                        <ul>
+                            <li>
+                                <p>
+                                    <strong><span>Seletor:</span></strong> No CSS, os estilos são aplicados a elementos HTML usando seletores. Por exemplo, para estilizar todos os parágrafos <span>&lt;p&gt;</span> de um documento HTML, você usaria o seletor <span>&lt;p&gt;</span>.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Propriedade:</span></strong> Depois de selecionar os elementos, você pode definir propriedades para alterar sua aparência. Por exemplo, a propriedade color define a cor do texto, <strong><span>font-size</span></strong> controla o tamanho da fonte e <strong><span>background-color</span></strong> define a cor de fundo de um elemento.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Valor:</span></strong> As propriedades têm valores associados a elas. Por exemplo, <strong><span>color: blue;</span></strong>, <strong><span>font-size: 16px;</span></strong>, onde <strong><span>blue</span></strong> e <strong><span>16px</span></strong> são valores para as propriedades.
+                                </p>
+                            </li>
+                        </ul>
+                </div>
+                <div class="conteudo-box">
+                    <h2>Principais Conceitos</h2>
+                        <ul>
+                            <li>
+                                <p><strong><span> Seletor: </span></strong>Identifica qual elemento HTML será estilizado.</p>
+                            </li>
+                            <li>
+                                <p><strong><span> Propriedade: </span></strong>Define quais características do elemento serão alteradas.</p>
+                            </li>
+                            <li>
+                                <p><strong><span> Valor: </span></strong>Especifica como a propriedade será alterada.</p>
+                            </li>
+                            <li>
+                                <p><strong><span> Cascata: </span></strong>O termo "cascata" refere-se à maneira como as regras de estilo são aplicadas, com base na hierarquia, especificidade e ordem de declaração.</p>
+                            </li>
+                        </ul>
+                </div>
+                <div class="conteudo-box">
+                    <h2>hierarquia de Seletores</h2>
+                        <ul>
+                            <li>
+                                <p>
+                                    <strong><span>Seletor de Tipo: </span></strong>Estiliza elementos com base em seu tipo, como <strong><span>p</span></strong>, <strong><span>h1</span></strong>, <span><strong>div</strong></span>.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Seletor de Classe: </span></strong>Utiliza classes para estilizar elementos específicos, como <strong><span>.classe</span></strong>.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Seletor de Id: </span></strong>Utiliza IDs para estilizar um elemento único, como <strong><span>#id</span></strong>.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Seletor de Descendência: </span></strong>Estiliza elementos que são descendentes de outro elemento, como <strong><span>div</span></strong>, <strong><span>p</span></strong>.
+                                </p>
+                            </li>
+                        </ul>
+                </div>
+                <div class="conteudo-box">
+                    <h2>Box Model</h2>
+                        <ul>
+                            <li>
+                                <p>
+                                    <strong><span>Content</span> (Conteúdo)<span>:</span> </strong>O conteúdo real do elemento, como texto, imagem, etc.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Padding: </span></strong>Espaço entre o conteúdo e a borda.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Border</span> (Borda)<span>:</span> </strong>Linha ao redor do padding.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Margin: </span></strong>Espaço externo ao redor do elemento.
+                                </p>
+                            </li>
+                        </ul>
+                </div>
+                <div class="conteudo-box">
+                    <h2>Responsividade</h2>
+                        <ul>
+                            <li>
+                                <p>
+                                    O CSS permite criar designs responsivos usando técnicas como media queries para adaptar a aparência do site a diferentes tamanhos de tela, como em dispositivos móveis.
+                                </p>
+                            </li>
+                        </ul>
+                </div>
+                <div class="conteudo-box">
+                    <p class="ultimo-paragrafo">
+                        O CSS desempenha um papel crucial na apresentação visual das páginas da web, permitindo o controle preciso de cores, layout, tipografia, espaçamento e outros aspectos visuais do conteúdo HTML. Esses são apenas conceitos básicos; há muitos recursos e técnicas avançadas para explorar no mundo do CSS.
+                    </p>
+                </div> 
+            </div>
+            <!-- FECHAMENTO TEXT CONTEUDO -->
+    </section>
+    <!--FECHAMENTO CONTEÚDO DO SITE-->
+    <!--CONTEÚDO DO SITE-->
+    <section class="conteudo-site" id="js">
+        <div class="interface face-js" id="borda-animada-js"> <!-- DIVs PADRÃO--> 
+            <!--FLEX-->
+            <div class="flex"> <!-- DIVs PADRÃO-->
+                <!-- IMG-CONTEUDO-->
+                <div class="img-conteudo">
+                    <img src="../Img/javascript/js_remove.png" alt="logo html" width="150px">
+                </div>
+                <!-- FECHAMENTO IMG-CONTEUDO-->
+            </div>
+            <!-- FECHAMENTO FLEX -->
+            <!-- TÍTULO -->
+            <h1 id="tecnologia-js">JAVASCRIPT</h1>
+            <!-- FECHAMENTO TÍTULO -->
+        </div>
+            <!-- TXT CONTEUDO -->
+            <div class="txt-conteudo">
+                <p class="p-txt-conteudo">
+                    JavaScript é uma linguagem de programação dinâmica, amplamente usada para criar interatividade e funcionalidade em páginas da web. É uma linguagem de script de alto nível, interpretada pelo navegador, que permite a manipulação do conteúdo HTML, estilização via CSS e interações com o usuário.
+                </p>
+                <div class="conteudo-box">
+                    <h2>Principais características</h2>
+                        <ul>
+                            <li>
+                                <p>
+                                    <strong><span>Linguagem de Programação do Lado do Cliente: </span></strong>O JavaScript é executado no navegador do usuário, proporcionando interatividade em tempo real sem a necessidade de comunicação com o servidor.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Multiparadigma: </span></strong>Suporta paradigmas de programação funcional e orientada a objetos.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Eventos: </span></strong>Permite a manipulação de eventos, como cliques de mouse, pressionamentos de teclas e carregamento da página.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>DOM Manipulation: </span></strong>Facilita a interação com o Document Object Model (DOM), permitindo a alteração dinâmica do conteúdo, estrutura e estilo da página.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Assíncrono: </span></strong>Suporta operações assíncronas, o que é fundamental para a execução de ações sem interromper o fluxo principal da aplicação.
+                                </p>
+                            </li>
+                        </ul>
+                </div>
+                <div class="conteudo-box">
+                    <h2>Uso Comum</h2>
+                        <ul>
+                            <li>
+                                <p>
+                                    <strong><span>Validação de Formulários: </span></strong>Verificações de entrada do usuário em formulários.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Manipulação do DOM: </span></strong>Alteração de elementos HTML, estilos e conteúdo.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Requisições Assíncronas: </span></strong>Interação com servidores para carregar dados dinamicamente sem recarregar a página.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Animações e Efeitos: </span></strong>Criação de animações e transições para melhorar a experiência do usuário.
+                                </p>
+                            </li>
+                        </ul>
+                </div>
+                <div class="conteudo-box">
+                    <h2>Bibliotecas e Frameworks</h2>
+                        <ul>
+                            <li>
+                                <p>
+                                    <strong><span>React, Angular, Vue.js: </span></strong>Frameworks para construção de interfaces de usuário.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>jQuery :</span></strong>Biblioteca que simplifica a manipulação do DOM e interações com o JavaScript.
+                                </p>
+                            </li>
+                        </ul>
+                </div>
+                <div class="conteudo-box">
+                    <h2>Ferramentas e Ambientes de Desenvolvimento</h2>
+                        <ul>
+                            <li>
+                                <p>
+                                    <strong><span>Console do Navegador: </span></strong>Permite testar e depurar código JavaScript no próprio navegador.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Editores de Código: </span></strong>Ferramentas como Visual Studio Code, Sublime Text, entre outros, oferecem suporte avançado para codificação em JavaScript.
+                                </p>
+                            </li>
+                        </ul>
+                </div>
+                <div class="conteudo-box">
+                    <p class="ultimo-paragrafo">
+                        JavaScript é uma das principais linguagens da web e continua evoluindo para atender às demandas crescentes por funcionalidades avançadas e experiências interativas na internet. É a base de muitas aplicações web modernas e tem um papel fundamental no desenvolvimento web.
+                    </p>
+                </div>
+            </div>
+            <!-- FECHAMENTO TEXT CONTEUDO -->
+    </section>
+    <!--FECHAMENTO CONTEÚDO DO SITE-->
+    <!--CONTEÚDO DO SITE-->
+    <section class="conteudo-site" id="bootstrap">
+        <div class="interface face-bootstrap" id="borda-animada-bootstrap"> <!-- DIVs PADRÃO--> 
+            <!--FLEX-->
+            <div class="flex" id="flex-bootstrap"> <!-- DIVs PADRÃO-->
+                <!-- IMG-CONTEUDO-->
+                <div class="img-conteudo">
+                <img src="../Img/bootstrap/bootstrap_remove.png" alt="logo html" width="150px">
+                </div>
+                <!-- FECHAMENTO IMG-CONTEUDO-->
+            </div>
+            <!-- FECHAMENTO FLEX -->
+            <!-- TÍTULO -->
+            <h1 id="tecnologia-bootstrap">BOOTSTRAP</h1>
+            <!-- FECHAMENTO TÍTULO -->
+        </div>
+            <!-- TXT CONTEUDO -->
+            <div class="txt-conteudo">
+                <p class="p-txt-conteudo">
+                    O Bootstrap é um dos frameworks front-end mais populares e poderosos do mundo, projetado para criar interfaces web responsivas e atraentes de forma rápida e eficiente.
+                </p>
+                <div class="conteudo-box">
+                    <h2>Principais Características</h2>
+                        <ul>
+                            <li>
+                                <p>
+                                    <strong><span> System Responsivo: </span></strong>Oferece um sistema de grid flexível e responsivo que permite criar layouts adaptáveis a diferentes tamanhos de tela.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Componentes Pré-Construídos: </span></strong>Fornece uma variedade de componentes pré-estilizados, como botões, formulários, alertas, barras de navegação, modais e muito mais, economizando tempo no desenvolvimento.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Design Responsivo: </span></strong>Prioriza a criação de sites que se adaptam e funcionam bem em dispositivos de diferentes tamanhos, como desktops, tablets e smartphones.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Documentação Detalhada: </span></strong>Possui uma documentação robusta e clara, com exemplos e guias detalhados para facilitar o aprendizado e a implementação.
+                                </p>
+                            </li>
+                        </ul>
+                </div>
+                <div class="conteudo-box">
+                    <h2>Uso Comum</h2>
+                        <ul>
+                            <li>
+                                <p>
+                                    <strong><span> Rápido: </span></strong>
+                                    Ideal para projetos que precisam de um desenvolvimento ágil e uma aparência profissional sem ter que começar do zero.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Consistência Visual: </span></strong>
+                                    Ajuda na manutenção da consistência visual em toda a aplicação, graças aos estilos e componentes pré-definidos.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Facilidade de Customização: </span></strong>
+                                    Permite personalizar facilmente o estilo dos componentes para atender às necessidades específicas do projeto.
+                                </p>
+                            </li>
+                        </ul>
+                </div>
+                <div class="conteudo-box">
+                    <h2>Vantagens</h2>
+                        <ul>
+                            <li>
+                                <p>
+                                    <strong><span>Comunidade Ativa: </span></strong>Grande comunidade de desenvolvedores, o que significa amplo suporte, recursos adicionais e muitos plugins disponíveis.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Compatibilidade entre Navegadores: </span></strong>Oferece suporte a uma ampla gama de navegadores modernos, garantindo uma experiência consistente para os usuários.
+                                </p>
+                            </li>
+                        </ul>
+                </div>
+                <div class="conteudo-box">
+                    <h2>Desvantagens</h2>
+                        <ul>
+                            <li>
+                                <p>
+                                    <strong><span>Tamanho do Arquivo: </span></strong>Pode adicionar um peso considerável ao tamanho total do arquivo, se não forem utilizados todos os componentes.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Dependência Externa: </span></strong>O desenvolvimento baseado em Bootstrap pode criar uma dependência no framework, o que pode limitar a flexibilidade em alguns casos.
+                                </p>
+                            </li>
+                        </ul>
+                </div>
+                <div class="conteudo-box">
+                    <p class="ultimo-paragrafo">
+                        O Bootstrap é uma ferramenta poderosa para construir interfaces web, especialmente quando é necessário um desenvolvimento rápido e eficiente com um conjunto de componentes consistentes e responsivos. Porém, é importante considerar suas vantagens e desvantagens para escolher se é a melhor opção para um projeto específico.
+                    </p>
+                </div>
+            </div>
+            <!-- FECHAMENTO TEXT CONTEUDO -->
+    </section>
+    <!--FECHAMENTO CONTEÚDO DO SITE-->
+    <!--CONTEÚDO DO SITE-->
+    <section class="conteudo-site" id="wordpress">
+        <div class="interface face-wordpress" id="borda-animada-wordpress"> <!-- DIVs PADRÃO--> 
+            <!--FLEX-->
+            <div class="flex"> <!-- DIVs PADRÃO-->
+                <!-- IMG-CONTEUDO-->
+                <div class="img-conteudo">
+                    <img src="../Img/wordpress/wordpress_remove.png" alt="logo html" width="150px">
+                </div>
+                <!-- FECHAMENTO IMG-CONTEUDO-->
+            </div>
+            <!-- FECHAMENTO FLEX -->
+            <!-- TÍTULO -->
+            <h1 id="tecnologia-wordpress"><span>W</span>ORDPRESS</h1>
+            <!-- FECHAMENTO TÍTULO -->
+        </div>
+            <!-- TXT CONTEUDO -->
+            <div class="txt-conteudo">
+                <p class="p-txt-conteudo">
+                    O WordPress é um sistema de gerenciamento de conteúdo (CMS) amplamente utilizado para criar e gerenciar sites, blogs e até mesmo lojas online. É conhecido por sua flexibilidade, facilidade de uso e extensibilidade, sendo uma das plataformas mais populares para construção de sites.
+                </p>
+                <div class="conteudo-box">
+                    <h2>Principais Características</h2>
+                        <ul>
+                            <li>
+                                <p>
+                                    <strong><span>Facilidade de Uso: </span></strong>Sua interface é intuitiva e amigável, permitindo que usuários sem conhecimento técnico possam criar e atualizar conteúdo facilmente.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Customização Flexível: </span></strong>Oferece uma vasta coleção de temas e plugins que permitem personalizar a aparência e funcionalidades do site de acordo com as necessidades específicas.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Comunidade Ativa: </span></strong>Conta com uma grande comunidade de desenvolvedores, designers e usuários, proporcionando suporte, recursos e constantes atualizações.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>SEO Integrado: </span></strong>Possui recursos embutidos e plugins que facilitam a otimização para mecanismos de busca, auxiliando na visibilidade online.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                <div class="conteudo-box">
+                    <h2>Uso Comum</h2>
+                        <ul>
+                            <li>
+                                <p>
+                                    <strong><span>Sites de Conteúdo: </span></strong>Ideal para blogs, sites de notícias, portfólios, etc., devido à facilidade de publicação e gerenciamento de conteúdo.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Lojas Online: </span></strong>Com o plugin WooCommerce, é possível transformar um site WordPress em uma loja virtual completa.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Sites Corporativos e Institucionais: </span></strong>Muitas empresas utilizam o WordPress devido à sua flexibilidade e capacidade de se adaptar a diferentes necessidades.
+                                </p>
+                            </li>
+                        </ul>
+                </div>
+                <div class="conteudo-box">
+                    <h2>Vantagens</h2>
+                        <ul>
+                            <li>
+                                <p>
+                                    <strong><span>Facilidade de Instalação: </span></strong>É fácil de instalar mesmo para iniciantes, especialmente se você usar serviços de hospedagem com instalação automatizada.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Extensibilidade: </span></strong>Com sua grande variedade de temas e plugins, é possível adicionar funcionalidades e estilos personalizados ao site.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Comunidade Ativa e Suporte: </span></strong>A vasta comunidade oferece suporte, tutoriais, temas e plugins, além de fóruns de discussão.
+                                </p>
+                            </li>
+                        </ul>
+                </div>
+                <div class="conteudo-box">
+                    <h2>Desvantagens</h2>
+                        <ul>
+                            <li>
+                                <p>
+                                    <strong><span>Segurança: </span></strong>A popularidade do WordPress pode torná-lo um alvo para ataques de segurança, sendo necessário manter constantes atualizações e precauções.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Desempenho: </span></strong>O uso excessivo de plugins ou temas mal otimizados pode impactar no desempenho do site.
+                                </p>
+                            </li>
+                        </ul>
+                </div>
+                <div class="conteudo-box">
+                    <p class="ultimo-paragrafo">
+                        O WordPress é uma ferramenta poderosa para a criação de sites de diferentes tipos e tamanhos, oferecendo uma ampla gama de recursos, flexibilidade e uma comunidade ativa. Sua escolha depende das necessidades específicas do projeto e da preferência de uso para cada caso.
+                    </p>
+                </div>
+            </div>
+            <!-- FECHAMENTO TEXT CONTEUDO -->
+    </section>
+    <!--FECHAMENTO CONTEÚDO DO SITE-->
+    <!--CONTEÚDO DO SITE-->
+    <section class="conteudo-site" id="reactnative">
+        <div class="interface face-react" id="borda-animada-reactnative"> <!-- DIVs PADRÃO--> 
+            <!--FLEX-->
+            <div class="flex" id="flex-reactnative"> <!-- DIVs PADRÃO-->
+                <!-- IMG-CONTEUDO-->
+                <div class="img-conteudo">
+                    <img src="../Img/reactnative/reactnative_remove.png" alt="logo html" width="150px">
+                </div>
+                <!-- FECHAMENTO IMG-CONTEUDO-->
+            </div>
+            <!-- FECHAMENTO FLEX -->
+            <!-- TÍTULO -->
+            <h1 id="tecnologia-react-native">REACT NATIVE</h1>
+            <!-- FECHAMENTO TÍTULO -->
+        </div>
+            <!-- TXT CONTEUDO -->
+            <div class="txt-conteudo">
+                <p class="p-txt-conteudo">
+                    React Native é um framework de desenvolvimento de aplicativos móveis criado pelo Facebook, baseado na biblioteca React para construir interfaces de usuário. Ele permite criar aplicativos móveis nativos para iOS e Android usando JavaScript e React.
+                </p>
+                <div class="conteudo-box">
+                    <h2>Principais Características</h2>
+                        <ul>
+                            <li>
+                                <p>
+                                    <strong><span>Desenvolvimento Cross-Platform: </span></strong>Permite o desenvolvimento de aplicativos para iOS e Android usando uma única base de código, proporcionando economia de tempo e esforço.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Component-Based: </span></strong>Utiliza componentes reutilizáveis, seguindo a abordagem declarativa do React, o que facilita a criação e manutenção de interfaces complexas.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Performance Nativa: </span></strong>Os aplicativos desenvolvidos em React Native têm desempenho semelhante a aplicativos nativos, já que muitos dos componentes são compilados para código nativo.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Hot Reloading: </span></strong>Permite visualizar as mudanças em tempo real durante o desenvolvimento, acelerando o processo de prototipagem e testes.
+                                </p>
+                            </li>
+                        </ul>
+                </div>
+                <div class="conteudo-box">
+                    <h2>Uso Comum</h2>
+                        <ul>
+                            <li>
+                                <p>
+                                    <strong><span>Aplicativos Móveis Nativos: </span></strong>Ideal para desenvolvimento de aplicativos móveis de diferentes tipos e tamanhos, desde apps de redes sociais até aplicativos corporativos.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Prototipagem Rápida:</span></strong>Facilita a criação rápida de protótipos de aplicativos para testes e validações de conceito.
+                                </p>
+                            </li>
+                        </ul>
+                </div>
+                <div class="conteudo-box">
+                    <h2>Vantagens</h2>
+                        <ul>
+                            <li>
+                                <p>
+                                    <strong><span> de Código: </span></strong>Permite reutilizar componentes entre iOS e Android, economizando tempo e esforço no desenvolvimento.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Comunidade Ativa: </span></strong>Conta com uma comunidade engajada de desenvolvedores, oferecendo suporte, bibliotecas e recursos adicionais.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Atualizações Contínuas: </span></strong>É mantido pelo Facebook e pela comunidade, recebendo constantes atualizações e melhorias.
+                                </p>
+                            </li>
+                        </ul>
+                </div>
+                <div class="conteudo-box">
+                    <h2>Desvantagens</h2>
+                        <ul>
+                            <li>
+                                <p>
+                                    <strong><span>Customizações Complexas: </span></strong>Algumas customizações profundas podem exigir codificação nativa para cada plataforma, anulando a vantagem do código compartilhado.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Dependência de APIs Nativas: </span></strong>Em certos casos, pode ser necessário utilizar APIs nativas diretamente, o que pode exigir conhecimento adicional.
+                                </p>
+                            </li>
+                        </ul>
+                </div>
+                <div class="conteudo-box">
+                    <p class="ultimo-paragrafo">
+                        React Native é uma escolha popular para o desenvolvimento de aplicativos móveis, especialmente para equipes que já estão familiarizadas com o ecossistema React ou que buscam uma solução cross-platform eficiente. Sua eficácia depende das necessidades específicas do projeto e da experiência da equipe de desenvolvimento.
+                    </p>
+                </div>
+            </div>
+            <!-- FECHAMENTO TEXT CONTEUDO -->
+    </section>
+    <!--FECHAMENTO CONTEÚDO DO SITE-->
+    <!--CONTEÚDO DO SITE-->
+    <section class="conteudo-site" id="python">
+        <div class="interface face-python" id="borda-animada-python"> <!-- DIVs PADRÃO--> 
+            <!--FLEX-->
+            <div class="flex"> <!-- DIVs PADRÃO-->
+                <!-- IMG-CONTEUDO-->
+                <div class="img-conteudo">
+                    <img src="../Img/python/python_remove.png" alt="logo html" width="150px">
+                </div>
+                <!-- FECHAMENTO IMG-CONTEUDO-->
+            </div>
+            <!-- FECHAMENTO FLEX -->
+            <!-- TÍTULO -->
+            <h1 id="tecnologia-python"><span>PY</span>THON</h1>
+            <!-- FECHAMENTO TÍTULO -->
+        </div>
+            <!-- TXT CONTEUDO -->
+            <div class="txt-conteudo">
+                <p class="p-txt-conteudo">
+                    Python é uma linguagem de programação versátil, de alto nível e de propósito geral, conhecida por sua simplicidade, legibilidade e vasta aplicabilidade em diversos campos.
+                </p>
+                <div class="conteudo-box">
+                    <h2>Principais Características</h2>
+                        <ul>
+                            <li>
+                                <p>
+                                    <strong><span>Simplicidade e Legibilidade: </span></strong>Sua sintaxe limpa e estrutura de código intuitiva permitem escrever programas de forma clara e concisa.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Ampla Comunidade e Bibliotecas: </span></strong>Possui uma grande comunidade de desenvolvedores e uma extensa biblioteca padrão, oferecendo uma gama diversificada de módulos para diferentes fins.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Multiplataforma: </span></strong>Funciona em diversos sistemas operacionais, incluindo Windows, macOS e várias distribuições Linux, facilitando a portabilidade dos programas.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Versatilidade: </span></strong>Pode ser utilizado em várias áreas, como desenvolvimento web, análise de dados, automação, inteligência artificial, aprendizado de máquina e muito mais.
+                                </p>
+                            </li>
+                        </ul>
+                </div>
+                <div class="conteudo-box">
+                    <h2>Uso Comum</h2>
+                        <ul>
+                            <li>
+                                <p>
+                                    <strong><span>Desenvolvimento Web: </span></strong>Frameworks como Django e Flask são usados para criar aplicativos web poderosos e escaláveis.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Ciência de Dados e Análise: </span></strong>Ferramentas como Pandas, NumPy e Matplotlib são amplamente usadas para manipulação e visualização de dados.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Aprendizado de Máquina e IA: </span></strong>Bibliotecas como TensorFlow, Scikit-learn e Keras são populares para construir modelos de aprendizado de máquina e redes neurais.
+                                </p>
+                            </li>
+                        </ul>
+                </div>
+                <div class="conteudo-box">
+                    <h2>Vantagens</h2>
+                        <ul>
+                            <li>
+                                <p>
+                                    <strong><span>Facilidade de Aprendizado: </span></strong>Ideal para iniciantes devido à sua sintaxe simples e legibilidade.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Produtividade: </span></strong>Permite desenvolver rapidamente devido à sua alta eficiência e baixo tempo de desenvolvimento.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Comunidade Ativa: </span></strong>Grande quantidade de recursos, documentação e suporte disponíveis online.
+                                </p>
+                            </li>
+                        </ul>
+                </div>
+                <div class="conteudo-box">
+                    <h2>Desvantagens</h2>
+                        <ul>
+                            <li>
+                                <p>
+                                    <strong><span>Desempenho Relativo: </span></strong>Em comparação com linguagens compiladas, como C++ ou Rust, pode apresentar menor desempenho em algumas situações.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>GIL</span> (Global Interpreter Lock)<span>:</span> </strong>Restrição que pode limitar a eficácia da execução concorrente em multicore.
+                                </p>
+                            </li>
+                        </ul>
+                </div>
+                <div class="conteudo-box">
+                    <p class="ultimo-paragrafo">
+                        Python é uma linguagem poderosa e amplamente utilizada em diferentes campos da computação devido à sua facilidade de uso, flexibilidade e ampla gama de aplicativos. Sua escolha depende das necessidades específicas do projeto e das preferências individuais do desenvolvedor.
+                    </p>
+                </div>
+            </div>
+            <!-- FECHAMENTO TEXT CONTEUDO -->
+    </section>
+    <!--FECHAMENTO CONTEÚDO DO SITE-->
+    <!--CONTEÚDO DO SITE-->
+    <section class="conteudo-site" id="php">
+        <div class="interface face-php" id="borda-animada-php"> <!-- DIVs PADRÃO--> 
+            <!--FLEX-->
+            <div class="flex" id="flex-php"> <!-- DIVs PADRÃO-->
+                <!-- IMG-CONTEUDO-->
+                <div class="img-conteudo">
+                    <img src="../Img/php/php_remove.png" alt="logo html" width="150px">
+                </div>
+                <!-- FECHAMENTO IMG-CONTEUDO-->
+            </div>
+            <!-- FECHAMENTO FLEX -->
+            <!-- TÍTULO -->
+            <h1 id="tecnologia-php">PHP</h1>
+            <!-- FECHAMENTO TÍTULO -->
+        </div>
+            <!-- TXT CONTEUDO -->
+            <div class="txt-conteudo">
+                <p class="p-txt-conteudo">
+                    PHP é uma linguagem de script de código aberto amplamente usada para desenvolvimento web. Foi originalmente concebida para criar páginas web dinâmicas e interativas e hoje é um dos pilares fundamentais da web, especialmente para sites dinâmicos e aplicações baseadas em servidor.
+                </p>
+                <div class="conteudo-box">
+                    <h2>Principais Características</h2>
+                        <ul>
+                            <li>
+                                <p>
+                                    <strong><span>Server-Side Scripting: </span></strong>PHP é executado no lado do servidor, gerando conteúdo dinâmico que é enviado para o navegador do usuário.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Integração com HTML: </span></strong>Pode ser facilmente incorporado em documentos HTML, permitindo a mistura de código PHP e HTML no mesmo arquivo.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Biblioteca Padrão Abundante: </span></strong>Possui uma ampla biblioteca de funções integradas para realizar uma variedade de tarefas comuns, como manipulação de strings, conexão com banco de dados, manipulação de arquivos, etc.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong><span>Facilidade de Integração: </span></strong>Oferece suporte a uma ampla variedade de bancos de dados, sendo particularmente compatível com o MySQL.
+                                </p>
+                            </li>
+                        </ul>
+                </div>
+                <div class="conteudo-box">
+                    <h2>Uso comum</h2>
+                    <ul>
+                        <li>
+                            <p>
+                                <strong><span>Desenvolvimento de Websites Dinâmicos: </span></strong>É amplamente utilizado para criar sites que exibem conteúdo dinâmico, como blogs, fóruns, sistemas de gerenciamento de conteúdo (CMS) e muito mais.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong><span>Formulários e Processamento de Dados: </span></strong>Muito útil para processar dados de formulários enviados pelos usuários, validação e interações com bancos de dados.
+                              </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong><span>Aplicações Baseadas em Servidor:</span></strong>Pode ser usado para criar APIs, sistemas de autenticação, sistemas de comércio eletrônico e outras aplicações baseadas em servidor.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="conteudo-box">
+                    <h2>Vantagens</h2>
+                    <ul>
+                        <li>
+                            <p>
+                                <strong><span>Facilidade de Aprendizado: </span></strong>Sintaxe simples e similar ao C, o que facilita a transição para desenvolvedores familiarizados com outras linguagens.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong><span>Grande Comunidade e Documentação: </span></strong>Possui uma grande base de usuários, o que significa ampla documentação, suporte e recursos online.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong><span>Ampla Disponibilidade de Hospedagem: </span></strong>A maioria dos provedores de hospedagem oferece suporte nativo ao PHP, facilitando a implantação de sites e aplicações.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="conteudo-box">
+                    <h2>Desvantagens</h2>
+                    <ul>
+                        <li>
+                            <p>
+                                <strong><span>Desempenho Relativo: </span></strong>Em comparação com linguagens como Node.js, Python ou Java, pode ter desempenho um pouco mais baixo em determinadas situações.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong><span>Questões de Segurança: </span></strong>Historicamente, algumas práticas de segurança deficientes têm sido associadas ao PHP, embora isso tenha melhorado com o tempo e as versões mais recentes.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="conteudo-box">
+                    <p class="ultimo-paragrafo">
+                        PHP continua sendo uma linguagem popular para desenvolvimento web devido à sua acessibilidade, integração fácil com HTML e vasta base de usuários. Sua escolha para um projeto específico depende das necessidades, recursos e familiaridade da equipe de desenvolvimento.
+                    </p>
+                </div>
+            </div>
+            <!-- FECHAMENTO TEXT CONTEUDO -->
+    </section>
+    <!--FECHAMENTO CONTEÚDO DO SITE-->
+    <!--CONTEÚDO DO SITE-->
+    <section class="conteudo-site" id="mysql">
+        <div class="interface face-mysql" id="borda-animada-mysql"> <!-- DIVs PADRÃO--> 
+            <!--FLEX-->
+            <div class="flex"> <!-- DIVs PADRÃO-->
+                <!-- IMG-CONTEUDO-->
+                <div class="img-conteudo">
+                    <img src="../Img/mysql/mysql_remove.png" alt="logo html" width="150px">
+                </div>
+                <!-- FECHAMENTO IMG-CONTEUDO-->
+            </div>
+            <!-- FECHAMENTO FLEX -->
+            <!-- TÍTULO -->
+            <h1 id="tecnologia-mysql"><span>MY</span>SQL</h1>
+            <!-- FECHAMENTO TÍTULO -->
+        </div>
+            <!-- TXT CONTEUDO -->
+            <div class="txt-conteudo">
+                <p class="p-txt-conteudo">
+                    O MySQL é um sistema de gerenciamento de banco de dados relacional de código aberto que utiliza a linguagem SQL (Structured Query Language) para gerenciar dados. É amplamente utilizado em aplicativos web e tem sido uma escolha popular para muitos desenvolvedores e organizações devido à sua confiabilidade, desempenho e flexibilidade.
+                </p>
+                <div class="conteudo-box">
+                    <h2>Principais Características</h2>
+                    <ul>
+                        <li>
+                            <p>
+                                <strong><span>Banco de Dados Relacional: </span></strong>Organiza os dados em tabelas relacionadas umas com as outras, permitindo consultas complexas e eficientes usando SQL.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong><span>Suporte a Transações: </span></strong>Permite operações ACID (Atomicidade, Consistência, Isolamento, Durabilidade), garantindo a integridade dos dados.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong><span>Desempenho Rápido: </span></strong>É conhecido por sua capacidade de lidar com cargas de trabalho pesadas e processar consultas rapidamente.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong><span>Multiplataforma: </span></strong>Funciona em várias plataformas, incluindo Windows, Linux, macOS e outras.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="conteudo-box">
+                    <h2>Uso Comum</h2>
+                    <ul>
+                        <li>
+                            <p>
+                                <strong><span>Desenvolvimento Web: </span></strong>É frequentemente usado em aplicações web para armazenar e gerenciar dados, como perfis de usuários, conteúdo de sites, informações de produtos, entre outros.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong><span>Sistemas de Gerenciamento de Conteúdo</span> (CMS)<span>:</span> </strong>Muitos sistemas de CMS, como WordPress, Joomla e Drupal, utilizam o MySQL para armazenar dados.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong><span>Aplicações Empresariais: </span></strong>Amplamente adotado por empresas para armazenar informações relacionadas a clientes, funcionários, inventários, entre outros.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="conteudo-box">
+                    <h2>Vantagens</h2>
+                    <ul>
+                        <li>
+                            <p>
+                                <strong><span>Código Aberto: </span></strong>É gratuito e de código aberto, permitindo sua utilização e modificação sem custos significativos.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong><span>Escalabilidade: </span></strong>Oferece opções para escalabilidade horizontal e vertical para atender às necessidades crescentes de dados e tráfego.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong><span>Comunidade Ativa e Suporte: </span></strong>Possui uma grande comunidade de usuários, oferecendo suporte, documentação e uma variedade de recursos online.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="conteudo-box">
+                    <h2>Desvantagens</h2>
+                    <ul>
+                        <li>
+                            <p>
+                                <strong><span>Otimização e Configuração: </span></strong>Pode requerer ajustes finos e otimizações para obter o melhor desempenho em cenários específicos.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong><span>Limitações de Recursos em Versões Gratuitas: </span></strong>Algumas funcionalidades avançadas podem estar disponíveis apenas em versões pagas ou edições empresariais.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="conteudo-box">
+                    <p class="ultimo-paragrafo">
+                        O MySQL é uma solução confiável e amplamente adotada para armazenamento e gerenciamento de dados em diversas aplicações. Sua escolha depende das necessidades específicas do projeto, requisitos de desempenho, escalabilidade e preferências da equipe de desenvolvimento.
+                    </p>
+                </div>
+            </div>
+            <!-- FECHAMENTO TEXT CONTEUDO -->
+    </section>
+    <!--FECHAMENTO CONTEÚDO DO SITE-->
+</main>
+<!-- ÍNICIO DO RODAPÉ -->
+<footer id="footer">
+    <!-- INTERFACE -->
+    <div class="interface">
+        <!-- LINE-FOOTER -->
+        <div class="line-footer">
+            <div class="flex">
+                <!-- LOGO FOOTER -->
+                <div class="logo-footer">
+                    <img src="../Img/logo.png" alt="logo do rodapé" width="150px">
+                </div>
+                <!-- FIM LOGO FOOTER -->
+                <!-- BOTÕES SOCIAIS -->
+                <div class="btn-footer">
+                    <div class="icon">
+                        <a href="https://www.instagram.com/lucasgabriel.505?igshid=MzMyNGUyNmU2YQ%3D%3D" target="external"><button><i class="bi bi-instagram"></i></button></a>
+                        <a href="https://www.youtube.com/@Lukas-wi9lm" target="external"><button id="youtube-button"><i class="bi bi-youtube"></i></button></a>
+                        <a href="https://www.linkedin.com/in/lucas-gabriel-b0b8aa249" target="external"><button><i class="bi bi-linkedin" target="external"></i></button></a>
+                    </div>
+                </div>
+                <!-- FIM BOTÕES SOCIAIS -->
+            </div>
+        </div>
+        <div class="line-footer borda">
+            <p>
+                <i class="bi bi-envelope-fill"></i>
+                <a href="mailto:lucasg.5643@gmail.com.br">lucasg.5643@gmail.com.br</a>
+            </p>
+            <p>+55(98) 98551-0079</p>
+        </div>
+        <!-- FIM DO LINE-FOOTER -->
+    </div>
+    <!-- FIM INTERFACE -->
+</footer>
+<!-- FIM DO RODAPÉ -->
+</body>
+</html>
